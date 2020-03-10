@@ -45,6 +45,10 @@ class Plane {
 
 	//method to create and store a circle
 	addCircle(shapeId: number, radius: number, coordinates: number[]){
+		if (coordinates.length !== 2){
+			return Error("Only x and y coordinates available")
+		}
+
 		let newCircle = new Circle(shapeId, radius, coordinates)
 		if (newCircle.area > this.area){
 			return Error("The circle cannot have an area larger than the 2D plane itself")
@@ -57,6 +61,10 @@ class Plane {
 
 	//method to create and store a Rectangle
 	addRectangle(shapeId: number, shapeLength: number, width: number, coordinates: number[], topLeft: number[], bottomRight: number[]){
+		if (coordinates.length !== 2 || topLeft.length !== 2 || bottomRight.length !== 2){
+			return Error("Only x and y coordinates available")
+		}
+
 		if (shapeLength === width){
 			return Error("You made a square not a rectangle!")
 		}

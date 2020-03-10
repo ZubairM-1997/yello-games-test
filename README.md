@@ -15,11 +15,11 @@ The Circle class takes in 3 arguments, which are shapeId, radius, coordinates (c
 
 The Rectangle class takes in 6 arguments
 1) shapeId
-2) shapeLength - lenght of rectangle
+2) shapeLength - length of rectangle
 3) width - width of rectangle
-4) coordinates - represent the coordinates of the centre of the rectangle
-5) topLeft - represent the coordinates of the topLeft corner of rectangle
-6) bottomRight - represent the coordinates of the bottomRight corner of the rectangle
+4) coordinates - represent the coordinates of the centre of the rectangle which is in an array
+5) topLeft - represent the coordinates of the topLeft corner of rectangle which is in an array
+6) bottomRight - represent the coordinates of the bottomRight corner of the rectangle which is in an array
 
 
 
