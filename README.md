@@ -9,6 +9,22 @@ I opted to solve this issue by using Object-Oriented Programming, for this I cre
 
 I realised that this would require composition rather than inheritance because of the relationship between the 2D Plane and the shapes, i.e: The Plane HAS Shapes which are either Rectangles or Circles
 
+The original question said that it is an infinite 2D board, however I found it easier to visualise in my head when I knew about the area and dimensions of the board, therefore The Plane constructor takes in 2 arguments, total area and dimensions(x,y), without it, the business logic of the code would still work after some minor refactoring
+
+The Circle class takes in 3 arguments, which are shapeId, radius, coordinates (centre)
+
+The Rectangle class takes in 6 arguments
+1) shapeId
+2) shapeLength - lenght of rectangle
+3) width - width of rectangle
+4) coordinates - represent the coordinates of the centre of the rectangle
+5) topLeft - represent the coordinates of the topLeft corner of rectangle
+6) bottomRight - represent the coordinates of the bottomRight corner of the rectangle
+
+
+
+
+
 ### Getting Started
 1) Clone this repository
 2) type the command "npm install" to install the dependancies
