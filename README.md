@@ -9,7 +9,7 @@ I opted to solve this issue by using Object-Oriented Programming, for this I cre
 
 I realised that this would require composition rather than inheritance because of the relationship between the 2D Plane and the shapes, i.e: The Plane HAS Shapes which are either Rectangles or Circles
 
-### Getting Started
+### Getting Started
 1) Clone this repository
 2) type the command "npm install" to install the dependancies
 3) to run the program type "ts-node solution.ts"
